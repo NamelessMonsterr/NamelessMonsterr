@@ -1,0 +1,57 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Boot sequence terminal screen loading the neural engine and granting access">
+  <defs>
+    <linearGradient id="termTop" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00F5FF"/><stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="360" rx="14" fill="#080B10"/>
+  <rect width="1200" height="360" rx="14" fill="none" stroke="url(#termTop)" stroke-width="1.4" opacity="0.6"/>
+
+  <!-- title bar -->
+  <rect width="1200" height="38" rx="14" fill="#0F1620"/>
+  <rect y="24" width="1200" height="14" fill="#0F1620"/>
+  <circle cx="26" cy="19" r="6" fill="#FF5F56"/>
+  <circle cx="48" cy="19" r="6" fill="#FFBD2E"/>
+  <circle cx="70" cy="19" r="6" fill="#27C93F"/>
+  <text x="600" y="24" text-anchor="middle" font-family="Consolas, monospace" font-size="12" fill="#5B6B7A" letter-spacing="2">neural_core.boot — /dev/hammad</text>
+
+  <g font-family="Consolas, 'Courier New', monospace" font-size="15" fill="#00FF99">
+    <text x="30" y="75" opacity="0"># booting AI OPERATING SYSTEM
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.2s" fill="freeze"/>
+    </text>
+
+    <text x="30" y="105" fill="#C9D1D9" opacity="0">&gt; Loading Neural Engine...........  [OK]
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.8s" fill="freeze"/>
+    </text>
+    <text x="30" y="132" fill="#C9D1D9" opacity="0">&gt; Loading Memory Subsystem.......  [OK]
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.4s" fill="freeze"/>
+    </text>
+    <text x="30" y="159" fill="#C9D1D9" opacity="0">&gt; Loading AI Modules..............  [OK]
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.0s" fill="freeze"/>
+    </text>
+    <text x="30" y="186" fill="#C9D1D9" opacity="0">&gt; Connecting to GitHub............  [OK]
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.6s" fill="freeze"/>
+    </text>
+    <text x="30" y="213" fill="#C9D1D9" opacity="0">&gt; Initializing Backend Services...  [OK]
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.2s" fill="freeze"/>
+    </text>
+    <text x="30" y="240" fill="#C9D1D9" opacity="0">&gt; Synchronizing Repositories......  [OK]
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.8s" fill="freeze"/>
+    </text>
+
+    <text x="30" y="275" font-weight="700" fill="#00F5FF" opacity="0">AI CORE READY.
+      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="4.5s" fill="freeze"/>
+    </text>
+    <text x="30" y="300" font-weight="700" fill="#8B5CF6" opacity="0">ACCESS GRANTED — welcome back, Hammad.
+      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="5.0s" fill="freeze"/>
+    </text>
+
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.1s" begin="5.4s" fill="freeze"/>
+      <text x="30" y="327" fill="#5B6B7A">hammad@core:~$</text>
+      <rect x="150" y="315" width="9" height="16" fill="#00FF99">
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" begin="5.4s"/>
+      </rect>
+    </g>
+  </g>
+</svg>

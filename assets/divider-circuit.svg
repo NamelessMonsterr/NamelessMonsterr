@@ -1,0 +1,17 @@
+<svg width="1200" height="40" viewBox="0 0 1200 40" xmlns="http://www.w3.org/2000/svg" role="presentation" aria-hidden="true">
+  <defs>
+    <linearGradient id="dc" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0D1117" stop-opacity="0"/>
+      <stop offset="15%" stop-color="#00F5FF"/>
+      <stop offset="50%" stop-color="#8B5CF6"/>
+      <stop offset="85%" stop-color="#00FF99"/>
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path d="M0 20 H480 L500 8 L520 32 L540 20 H660 L680 32 L700 8 L720 20 H1200"
+        stroke="url(#dc)" stroke-width="1.6" fill="none" opacity="0.8">
+    <animate attributeName="stroke-dasharray" values="0,2000;2000,0" dur="3s" repeatCount="indefinite"/>
+  </path>
+  <circle cx="500" cy="8" r="2.4" fill="#00F5FF"/>
+  <circle cx="700" cy="8" r="2.4" fill="#00FF99"/>
+</svg>

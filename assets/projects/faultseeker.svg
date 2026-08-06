@@ -1,0 +1,36 @@
+<svg width="600" height="280" viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Project card for FaultSeeker++, a multi-agent LLM security research framework">
+  <defs>
+    <linearGradient id="fsBorder" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8B5CF6"/><stop offset="100%" stop-color="#00F5FF"/>
+    </linearGradient>
+    <radialGradient id="fsGlow" cx="15%" cy="15%" r="60%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.18"/><stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="2" y="2" width="596" height="276" rx="14" fill="#0D1117" stroke="url(#fsBorder)" stroke-width="1.6">
+    <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.4s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="2" y="2" width="596" height="276" rx="14" fill="url(#fsGlow)"/>
+
+  <circle cx="26" cy="28" r="5" fill="#8B5CF6"><animate attributeName="opacity" values="1;0.3;1" dur="1.4s" repeatCount="indefinite"/></circle>
+  <text x="40" y="33" font-family="Consolas, monospace" font-size="11" fill="#8B5CF6" letter-spacing="1">PUBLISHED</text>
+  <text x="574" y="33" text-anchor="end" font-family="Consolas, monospace" font-size="11" fill="#5B6B7A">research</text>
+
+  <text x="26" y="76" font-family="Consolas, monospace" font-size="24" fill="#E8F1F2" font-weight="700">🛡️ FaultSeeker++</text>
+  <text x="26" y="102" font-family="Consolas, monospace" font-size="12" fill="#8FA3B0">multi-agent LLM framework · smart contract security</text>
+
+  <foreignObject x="26" y="118" width="548" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:Consolas,monospace;font-size:12px;color:#C9D1D9;line-height:1.5;">
+      Coordinates multiple LLM agents to localize vulnerabilities in DeFi smart contracts. Written up as a full IEEE-format conference paper.
+    </div>
+  </foreignObject>
+
+  <g font-family="Consolas, monospace" font-size="10" fill="#8B5CF6">
+    <rect x="26" y="200" width="120" height="22" rx="11" fill="none" stroke="#8B5CF6"/><text x="86" y="214" text-anchor="middle">Multi-Agent LLMs</text>
+    <rect x="152" y="200" width="70" height="22" rx="11" fill="none" stroke="#00F5FF"/><text x="187" y="214" text-anchor="middle" fill="#00F5FF">Security</text>
+    <rect x="228" y="200" width="52" height="22" rx="11" fill="none" stroke="#00FF99"/><text x="254" y="214" text-anchor="middle" fill="#00FF99">IEEE</text>
+  </g>
+
+  <line x1="26" y1="240" x2="574" y2="240" stroke="#1B2733"/>
+  <text x="26" y="262" font-family="Consolas, monospace" font-size="12" fill="#8B5CF6">→ github.com/NamelessMonsterr/FaultSeeker-</text>
+</svg>

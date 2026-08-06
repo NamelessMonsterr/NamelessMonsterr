@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="200" viewBox="0 0 1200 200" role="img" aria-label="Ambient starfield with drifting particles, decorative section background">
+  <defs>
+    <radialGradient id="galaxyCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.35"/><stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="200" rx="14" fill="#0D1117"/>
+  <rect width="1200" height="200" rx="14" fill="none" stroke="#1B2733"/>
+  <circle cx="600" cy="100" r="180" fill="url(#galaxyCore)"/>
+
+  <g fill="#E8F1F2">
+    <circle cx="50" cy="40" r="1"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.3s" repeatCount="indefinite"/></circle>
+    <circle cx="140" cy="90" r="1.4"><animate attributeName="opacity" values="1;0.2;1" dur="3.1s" repeatCount="indefinite"/></circle>
+    <circle cx="230" cy="50" r="1"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.6s" repeatCount="indefinite"/></circle>
+    <circle cx="320" cy="140" r="1.2"><animate attributeName="opacity" values="1;0.2;1" dur="2.9s" repeatCount="indefinite"/></circle>
+    <circle cx="420" cy="70" r="1"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.1s" repeatCount="indefinite"/></circle>
+    <circle cx="500" cy="150" r="1.6" fill="#00F5FF"><animate attributeName="opacity" values="1;0.2;1" dur="3.4s" repeatCount="indefinite"/></circle>
+    <circle cx="600" cy="40" r="1.2"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="700" cy="120" r="1"><animate attributeName="opacity" values="1;0.2;1" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="790" cy="60" r="1.4" fill="#8B5CF6"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.2s" repeatCount="indefinite"/></circle>
+    <circle cx="880" cy="150" r="1"><animate attributeName="opacity" values="1;0.2;1" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="960" cy="80" r="1.2"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.7s" repeatCount="indefinite"/></circle>
+    <circle cx="1050" cy="40" r="1"><animate attributeName="opacity" values="1;0.2;1" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="1120" cy="130" r="1.4"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="1160" cy="70" r="1" fill="#00FF99"><animate attributeName="opacity" values="1;0.2;1" dur="2.9s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <g fill="#00F5FF" opacity="0.7">
+    <circle r="1.6"><animateMotion path="M-20,60 C 300,20 600,140 900,60 S 1200,100 1220,60" dur="14s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <text x="600" y="105" text-anchor="middle" font-family="Consolas, monospace" font-size="12" letter-spacing="4" fill="#5B6B7A">DEEP FIELD — ambient background layer</text>
+</svg>

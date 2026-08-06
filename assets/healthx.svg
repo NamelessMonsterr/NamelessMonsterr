@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460" role="img" aria-label="HealthX flagship project dashboard showing status, architecture, and feature set">
+  <defs>
+    <linearGradient id="hxdBorder" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00F5FF"/><stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <radialGradient id="hxdGlow" cx="10%" cy="10%" r="60%">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.12"/><stop offset="100%" stop-color="#00F5FF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="460" rx="16" fill="#0D1117" stroke="url(#hxdBorder)" stroke-width="1.6"/>
+  <rect width="1200" height="460" rx="16" fill="url(#hxdGlow)"/>
+
+  <!-- header -->
+  <circle cx="40" cy="40" r="6" fill="#00FF99"><animate attributeName="opacity" values="1;0.3;1" dur="1.4s" repeatCount="indefinite"/></circle>
+  <text x="56" y="45" font-family="Consolas, monospace" font-size="12" fill="#00FF99" letter-spacing="1">FLAGSHIP BUILD — ACTIVE</text>
+  <text x="1160" y="45" text-anchor="end" font-family="Consolas, monospace" font-size="12" fill="#5B6B7A">dashboard.healthx</text>
+
+  <text x="40" y="96" font-family="Consolas, monospace" font-size="34" fill="#E8F1F2" font-weight="700">🩺 HealthX</text>
+  <text x="40" y="122" font-family="Consolas, monospace" font-size="13" fill="#8FA3B0">Clinical decision-support system, framed as a multi-agent healthcare AI</text>
+
+  <!-- three panels -->
+  <g font-family="Consolas, monospace">
+    <!-- panel: architecture -->
+    <rect x="40" y="150" width="360" height="270" rx="12" fill="#101825" stroke="#1B2733"/>
+    <text x="60" y="178" font-size="12" fill="#00F5FF" letter-spacing="2">ARCHITECTURE</text>
+    <g font-size="11" fill="#C9D1D9">
+      <circle cx="70" cy="205" r="4" fill="#00F5FF"/><text x="82" y="209">React chat client</text>
+      <line x1="70" y1="209" x2="70" y2="235" stroke="#1B2733"/>
+      <circle cx="70" cy="240" r="4" fill="#8B5CF6"/><text x="82" y="244">FastAPI orchestration layer</text>
+      <line x1="70" y1="244" x2="70" y2="270" stroke="#1B2733"/>
+      <circle cx="70" cy="275" r="4" fill="#00FF99"/><text x="82" y="279">Multi-agent reasoning</text>
+      <line x1="70" y1="279" x2="70" y2="305" stroke="#1B2733"/>
+      <circle cx="70" cy="310" r="4" fill="#00F5FF"/><text x="82" y="314">RAG retrieval over clinical context</text>
+      <line x1="70" y1="314" x2="70" y2="340" stroke="#1B2733"/>
+      <circle cx="70" cy="345" r="4" fill="#8B5CF6"/><text x="82" y="349">EMR side-panel state sync</text>
+    </g>
+    <text x="60" y="400" font-size="10" fill="#5B6B7A">request → orchestrate → retrieve → reason → render</text>
+
+    <!-- panel: features -->
+    <rect x="420" y="150" width="360" height="270" rx="12" fill="#101825" stroke="#1B2733"/>
+    <text x="440" y="178" font-size="12" fill="#8B5CF6" letter-spacing="2">FEATURES</text>
+    <g font-size="12" fill="#C9D1D9">
+      <text x="440" y="208">✓ Chat-first clinical interface</text>
+      <text x="440" y="234">✓ Live EMR right panel</text>
+      <text x="440" y="260">✓ Retrieval-augmented reasoning</text>
+      <text x="440" y="286">✓ Multi-agent task decomposition</text>
+      <text x="440" y="312">✓ Session-scoped context memory</text>
+    </g>
+    <text x="440" y="400" font-size="10" fill="#5B6B7A">support-oriented — not a diagnostic replacement</text>
+
+    <!-- panel: stack -->
+    <rect x="800" y="150" width="360" height="270" rx="12" fill="#101825" stroke="#1B2733"/>
+    <text x="820" y="178" font-size="12" fill="#00FF99" letter-spacing="2">STACK</text>
+    <g font-size="10">
+      <rect x="820" y="196" width="70" height="24" rx="12" fill="none" stroke="#00F5FF"/><text x="855" y="212" text-anchor="middle" fill="#00F5FF">Python</text>
+      <rect x="898" y="196" width="80" height="24" rx="12" fill="none" stroke="#8B5CF6"/><text x="938" y="212" text-anchor="middle" fill="#8B5CF6">FastAPI</text>
+      <rect x="986" y="196" width="66" height="24" rx="12" fill="none" stroke="#00FF99"/><text x="1019" y="212" text-anchor="middle" fill="#00FF99">RAG</text>
+      <rect x="820" y="230" width="102" height="24" rx="12" fill="none" stroke="#00F5FF"/><text x="871" y="246" text-anchor="middle" fill="#00F5FF">Multi-Agent</text>
+      <rect x="930" y="230" width="66" height="24" rx="12" fill="none" stroke="#8B5CF6"/><text x="963" y="246" text-anchor="middle" fill="#8B5CF6">React</text>
+      <rect x="820" y="264" width="76" height="24" rx="12" fill="none" stroke="#00FF99"/><text x="858" y="280" text-anchor="middle" fill="#00FF99">SQLite</text>
+    </g>
+    <line x1="820" y1="310" x2="1140" y2="310" stroke="#1B2733"/>
+    <text x="820" y="335" font-size="11" fill="#00F5FF">→ github.com/NamelessMonsterr/Health-X</text>
+    <text x="820" y="358" font-size="10" fill="#5B6B7A">solo-built, independently designed and shipped</text>
+  </g>
+</svg>

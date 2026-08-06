@@ -1,0 +1,13 @@
+<svg width="1200" height="46" viewBox="0 0 1200 46" xmlns="http://www.w3.org/2000/svg" role="presentation" aria-hidden="true">
+  <g font-family="Consolas, monospace" font-size="11" fill="#00FF99">
+    <text x="80" y="10" opacity="0.7">1</text><text x="80" y="24" opacity="0.4">0</text><text x="80" y="38" opacity="0.15">1</text>
+    <text x="260" y="14" opacity="0.5">0</text><text x="260" y="28" opacity="0.8">1</text><text x="260" y="42" opacity="0.2">0</text>
+    <text x="440" y="8" opacity="0.3">1</text><text x="440" y="22" opacity="0.6">1</text><text x="440" y="36" opacity="0.9">0</text>
+    <text x="620" y="12" opacity="0.8">0</text><text x="620" y="26" opacity="0.3">1</text><text x="620" y="40" opacity="0.5">1</text>
+    <text x="800" y="10" opacity="0.4">1</text><text x="800" y="24" opacity="0.7">0</text><text x="800" y="38" opacity="0.2">1</text>
+    <text x="980" y="14" opacity="0.6">0</text><text x="980" y="28" opacity="0.9">0</text><text x="980" y="42" opacity="0.3">1</text>
+    <text x="1140" y="8" opacity="0.5">1</text><text x="1140" y="22" opacity="0.2">1</text><text x="1140" y="36" opacity="0.7">0</text>
+    <animateTransform attributeName="transform" type="translate" values="0,-10;0,10;0,-10" dur="3s" repeatCount="indefinite"/>
+  </g>
+  <line x1="0" y1="23" x2="1200" y2="23" stroke="#1B2733" stroke-width="1"/>
+</svg>

@@ -1,0 +1,124 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animated hero banner introducing Hammad as an AI operating system, with neural network background">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#05070C"/>
+      <stop offset="55%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#0A0F1A"/>
+    </linearGradient>
+    <linearGradient id="cyanPurple" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00F5FF"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#00F5FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1B2733" stroke-width="1"/>
+    </pattern>
+    <clipPath id="frame"><rect width="1200" height="420" rx="18"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="420" fill="url(#bgGrad)"/>
+    <rect width="1200" height="420" fill="url(#grid)" opacity="0.35"/>
+    <circle cx="600" cy="210" r="260" fill="url(#coreGlow)"/>
+
+    <!-- ambient particles -->
+    <g fill="#00F5FF">
+      <circle cx="120" cy="80" r="2"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.4s" repeatCount="indefinite"/></circle>
+      <circle cx="980" cy="60" r="2"><animate attributeName="opacity" values="0.9;0.2;0.9" dur="2.6s" repeatCount="indefinite"/></circle>
+      <circle cx="1080" cy="330" r="2.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="4.1s" repeatCount="indefinite"/></circle>
+      <circle cx="90" cy="340" r="2"><animate attributeName="opacity" values="1;0.2;1" dur="3.8s" repeatCount="indefinite"/></circle>
+      <circle cx="640" cy="40" r="1.6"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.9s" repeatCount="indefinite"/></circle>
+      <circle cx="300" cy="370" r="1.8"><animate attributeName="opacity" values="0.8;0.1;0.8" dur="3.3s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- floating drifting particles -->
+    <g fill="#8B5CF6" opacity="0.8">
+      <circle r="1.6"><animateMotion path="M60,380 C 240,300 420,420 620,340 S 1020,260 1140,320" dur="9s" repeatCount="indefinite"/></circle>
+      <circle r="1.6"><animateMotion path="M1140,60 C 940,140 760,20 560,90 S 160,150 40,80" dur="11s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- neural network lines -->
+    <g stroke="url(#cyanPurple)" stroke-width="1" opacity="0.45">
+      <line x1="150" y1="120" x2="330" y2="180"><animate attributeName="opacity" values="0.15;0.6;0.15" dur="2.4s" repeatCount="indefinite"/></line>
+      <line x1="330" y1="180" x2="300" y2="300"><animate attributeName="opacity" values="0.6;0.15;0.6" dur="3.1s" repeatCount="indefinite"/></line>
+      <line x1="900" y1="130" x2="1050" y2="190"><animate attributeName="opacity" values="0.15;0.6;0.15" dur="2.8s" repeatCount="indefinite"/></line>
+      <line x1="900" y1="130" x2="820" y2="280"><animate attributeName="opacity" values="0.6;0.15;0.6" dur="3.6s" repeatCount="indefinite"/></line>
+      <line x1="150" y1="120" x2="60" y2="260"><animate attributeName="opacity" values="0.4;0.1;0.4" dur="2.2s" repeatCount="indefinite"/></line>
+    </g>
+    <g fill="#00F5FF">
+      <circle cx="150" cy="120" r="2.5"/><circle cx="330" cy="180" r="2.5"/><circle cx="300" cy="300" r="2.5"/>
+      <circle cx="900" cy="130" r="2.5"/><circle cx="1050" cy="190" r="2.5"/><circle cx="820" cy="280" r="2.5"/><circle cx="60" cy="260" r="2.5"/>
+    </g>
+
+    <!-- circuit trace lower band -->
+    <g stroke="#00FF99" stroke-width="1.4" fill="none" opacity="0.55">
+      <path d="M0 400 H180 L210 370 H430 L460 400 H720 L750 370 H1000 L1030 400 H1200">
+        <animate attributeName="stroke-dasharray" values="0,2400;2400,0" dur="4s" repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <!-- scanning sweep -->
+    <rect x="0" y="0" width="1200" height="3" fill="#00F5FF" opacity="0.5" filter="url(#softBlur)">
+      <animate attributeName="y" values="0;420;0" dur="6s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- avatar frame -->
+    <g transform="translate(150,210)">
+      <circle r="72" fill="url(#nodeGlow)"/>
+      <circle r="58" fill="#0D1117" stroke="url(#cyanPurple)" stroke-width="2"/>
+      <circle r="58" fill="none" stroke="#00F5FF" stroke-width="1.5" stroke-dasharray="6 10" opacity="0.7">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="14s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="68" fill="none" stroke="#8B5CF6" stroke-width="1" stroke-dasharray="2 14" opacity="0.6">
+        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="20s" repeatCount="indefinite"/>
+      </circle>
+      <text x="0" y="10" text-anchor="middle" font-family="Consolas, monospace" font-size="34" fill="#E8F1F2" font-weight="700">AB</text>
+    </g>
+
+    <!-- title block -->
+    <g font-family="Consolas, 'Courier New', monospace">
+      <text x="270" y="150" font-size="15" letter-spacing="4" fill="#00FF99" opacity="0.9">SYSTEM.USER //</text>
+      <text x="270" y="205" font-size="52" font-weight="700" fill="#E8F1F2" letter-spacing="4">
+        H.A.M.M.A.D
+        <animate attributeName="opacity" values="0;1" dur="1.6s" begin="0.1s" fill="freeze"/>
+      </text>
+      <text x="270" y="240" font-size="19" fill="url(#cyanPurple)" letter-spacing="6">AI OPERATING SYSTEM</text>
+
+      <g transform="translate(270,270)">
+        <rect width="12" height="12" fill="#00FF99" rx="2">
+          <animate attributeName="opacity" values="1;0.15;1" dur="1.3s" repeatCount="indefinite"/>
+        </rect>
+        <text x="20" y="11" font-size="14" fill="#00FF99" letter-spacing="2">STATUS: ONLINE</text>
+        <text x="200" y="11" font-size="14" fill="#8B5CF6" letter-spacing="2">NEURAL CORE ACTIVE</text>
+      </g>
+
+      <text x="270" y="310" font-size="13" fill="#5B6B7A" letter-spacing="1">Backend Developer · AI Engineer · Builder of HealthX</text>
+    </g>
+
+    <!-- cpu / mem readout, top right -->
+    <g transform="translate(950,40)" font-family="Consolas, monospace" font-size="11" fill="#5B6B7A">
+      <text x="0" y="0" fill="#00F5FF">CPU</text>
+      <rect x="0" y="8" width="120" height="6" fill="#141C26" rx="3"/>
+      <rect x="0" y="8" width="80" height="6" fill="#00F5FF" rx="3">
+        <animate attributeName="width" values="40;100;60;90;40" dur="3.2s" repeatCount="indefinite"/>
+      </rect>
+      <text x="0" y="34" fill="#8B5CF6">MEM</text>
+      <rect x="0" y="42" width="120" height="6" fill="#141C26" rx="3"/>
+      <rect x="0" y="42" width="70" height="6" fill="#8B5CF6" rx="3">
+        <animate attributeName="width" values="55;95;65;110;55" dur="4s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <rect x="0.5" y="0.5" width="1199" height="419" fill="none" stroke="url(#cyanPurple)" stroke-width="1" opacity="0.5" rx="18"/>
+  </g>
+</svg>

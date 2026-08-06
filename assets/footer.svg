@@ -1,0 +1,27 @@
+<svg width="1200" height="160" viewBox="0 0 1200 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Closing banner displaying a personal mission statement">
+  <defs>
+    <linearGradient id="fBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A0F1A"/><stop offset="100%" stop-color="#0D1117"/>
+    </linearGradient>
+    <linearGradient id="fLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#00FF99" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="160" fill="url(#fBg)"/>
+  <line x1="0" y1="0" x2="1200" y2="0" stroke="url(#fLine)" stroke-width="1.5"/>
+
+  <g font-family="Consolas, monospace" text-anchor="middle">
+    <text x="600" y="60" font-size="13" letter-spacing="3" fill="#5B6B7A">
+      &gt; end_of_transmission
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.4s" repeatCount="indefinite"/>
+    </text>
+    <text x="600" y="98" font-size="16" fill="#E8F1F2">"Complex ideas deserve simple, reliable software."</text>
+    <text x="600" y="128" font-size="12" fill="#00F5FF" letter-spacing="2">SYSTEM STANDING BY</text>
+  </g>
+
+  <circle cx="600" cy="128" r="4" fill="#00FF99">
+    <animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite"/>
+  </circle>
+</svg>
