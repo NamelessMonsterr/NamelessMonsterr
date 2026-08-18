@@ -1,0 +1,65 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Neural cognition map showing two hemispheres connected by firing synapses">
+  <defs>
+    <radialGradient id="brainGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="synapseGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00F5FF"/><stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <filter id="brainBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.2"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="420" rx="14" fill="#0D1117"/>
+  <rect width="1200" height="420" rx="14" fill="none" stroke="#1B2733"/>
+  <text x="40" y="42" font-family="Consolas, monospace" font-size="13" letter-spacing="4" fill="#5B6B7A">NEURAL CORE // COGNITION MAP</text>
+
+  <circle cx="600" cy="230" r="220" fill="url(#brainGlow)"/>
+
+  <!-- procedurally-styled node cluster forming a brain silhouette (two hemispheres) -->
+  <g id="left-hemi" fill="#00F5FF">
+    <circle cx="430" cy="140" r="4"/><circle cx="390" cy="170" r="3.4"/><circle cx="360" cy="210" r="4"/>
+    <circle cx="350" cy="260" r="3.4"/><circle cx="365" cy="310" r="4"/><circle cx="400" cy="340" r="3.4"/>
+    <circle cx="450" cy="355" r="4"/><circle cx="480" cy="120" r="3"/><circle cx="420" cy="230" r="3"/>
+    <circle cx="460" cy="270" r="3.4"/>
+  </g>
+  <g id="right-hemi" fill="#8B5CF6">
+    <circle cx="770" cy="140" r="4"/><circle cx="810" cy="170" r="3.4"/><circle cx="840" cy="210" r="4"/>
+    <circle cx="850" cy="260" r="3.4"/><circle cx="835" cy="310" r="4"/><circle cx="800" cy="340" r="3.4"/>
+    <circle cx="750" cy="355" r="4"/><circle cx="720" cy="120" r="3"/><circle cx="780" cy="230" r="3"/>
+    <circle cx="740" cy="270" r="3.4"/>
+  </g>
+  <g fill="#00FF99">
+    <circle cx="600" cy="110" r="4.5"/><circle cx="600" cy="180" r="4"/><circle cx="600" cy="250" r="4"/>
+    <circle cx="600" cy="320" r="4"/><circle cx="600" cy="370" r="4"/>
+  </g>
+
+  <!-- synapse connections, cross-hemisphere -->
+  <g stroke="url(#synapseGrad)" stroke-width="1" fill="none">
+    <path d="M430,140 Q600,90 770,140" opacity="0.5"><animate attributeName="opacity" values="0.15;0.6;0.15" dur="2.6s" repeatCount="indefinite"/></path>
+    <path d="M360,210 Q600,240 840,210" opacity="0.5"><animate attributeName="opacity" values="0.6;0.15;0.6" dur="3.1s" repeatCount="indefinite"/></path>
+    <path d="M365,310 Q600,360 835,310" opacity="0.5"><animate attributeName="opacity" values="0.15;0.55;0.15" dur="2.9s" repeatCount="indefinite"/></path>
+    <path d="M420,230 Q510,200 600,180" opacity="0.4"><animate attributeName="opacity" values="0.5;0.1;0.5" dur="2.2s" repeatCount="indefinite"/></path>
+    <path d="M780,230 Q690,200 600,180" opacity="0.4"><animate attributeName="opacity" values="0.1;0.5;0.1" dur="2.4s" repeatCount="indefinite"/></path>
+    <path d="M460,270 Q530,260 600,250" opacity="0.4"><animate attributeName="opacity" values="0.4;0.1;0.4" dur="2s" repeatCount="indefinite"/></path>
+    <path d="M740,270 Q670,260 600,250" opacity="0.4"><animate attributeName="opacity" values="0.1;0.4;0.1" dur="2.3s" repeatCount="indefinite"/></path>
+  </g>
+
+  <!-- firing pulses along synapses -->
+  <circle r="3" fill="#E8F1F2" filter="url(#brainBlur)">
+    <animateMotion path="M430,140 Q600,90 770,140" dur="2.6s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="3" fill="#E8F1F2" filter="url(#brainBlur)">
+    <animateMotion path="M365,310 Q600,360 835,310" dur="2.9s" repeatCount="indefinite" begin="0.5s"/>
+  </circle>
+  <circle r="3" fill="#E8F1F2" filter="url(#brainBlur)">
+    <animateMotion path="M600,110 L600,370" dur="2.2s" repeatCount="indefinite" begin="0.8s"/>
+  </circle>
+
+  <g font-family="Consolas, monospace" font-size="12" fill="#5B6B7A">
+    <text x="40" y="80">L_HEMISPHERE</text><text x="40" y="96" fill="#00F5FF">logic · syntax · structure</text>
+    <text x="1000" y="80" text-anchor="end">R_HEMISPHERE</text><text x="1000" y="96" text-anchor="end" fill="#8B5CF6">pattern · inference · design</text>
+  </g>
+  <text x="600" y="405" text-anchor="middle" font-family="Consolas, monospace" font-size="11" fill="#3D4A57">firing rate: variable · uptime: since first commit</text>
+</svg>

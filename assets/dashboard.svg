@@ -1,0 +1,62 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Simulated three-panel mission control dashboard with uptime ring, throughput bars, and event log — illustrative, not live data">
+  <defs>
+    <linearGradient id="panelGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#131C28"/><stop offset="100%" stop-color="#0D1117"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00F5FF"/><stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="420" rx="14" fill="#0D1117"/>
+  <rect width="1200" height="420" rx="14" fill="none" stroke="#1B2733"/>
+  <text x="40" y="40" font-family="Consolas, monospace" font-size="13" letter-spacing="4" fill="#5B6B7A">HOLO-DASHBOARD // MISSION CONTROL</text>
+  <text x="1160" y="40" text-anchor="end" font-family="Consolas, monospace" font-size="11" letter-spacing="2" fill="#5B6B7A" opacity="0.8">SIMULATED DATA</text>
+
+  <!-- panel 1: uptime ring -->
+  <g transform="translate(160,220)">
+    <rect x="-120" y="-140" width="240" height="290" rx="12" fill="url(#panelGrad)" stroke="#1B2733"/>
+    <circle r="70" fill="none" stroke="#141C26" stroke-width="10"/>
+    <circle r="70" fill="none" stroke="url(#ringGrad)" stroke-width="10" stroke-linecap="round"
+            stroke-dasharray="440" stroke-dashoffset="440" transform="rotate(-90)">
+      <animate attributeName="stroke-dashoffset" from="440" to="70" dur="1.8s" fill="freeze" begin="0.2s"/>
+    </circle>
+    <text x="0" y="-6" text-anchor="middle" font-family="Consolas, monospace" font-size="26" fill="#E8F1F2" font-weight="700">84%</text>
+    <text x="0" y="18" text-anchor="middle" font-family="Consolas, monospace" font-size="11" fill="#5B6B7A">SYSTEM LOAD</text>
+    <text x="0" y="120" text-anchor="middle" font-family="Consolas, monospace" font-size="12" fill="#00F5FF" letter-spacing="2">CORE STATUS</text>
+  </g>
+
+  <!-- panel 2: bar readout -->
+  <g transform="translate(430,80)">
+    <rect x="0" y="0" width="330" height="290" rx="12" fill="url(#panelGrad)" stroke="#1B2733"/>
+    <text x="20" y="30" font-family="Consolas, monospace" font-size="12" fill="#00FF99" letter-spacing="2">THROUGHPUT (7D)</text>
+    <g stroke="#1B2733"><line x1="20" y1="250" x2="310" y2="250"/><line x1="20" y1="40" x2="20" y2="250"/></g>
+    <g fill="url(#ringGrad)">
+      <rect x="35" y="180" width="26" height="70" rx="3"><animate attributeName="height" from="0" to="70" dur="1s" begin="0.1s" fill="freeze"/><animate attributeName="y" from="250" to="180" dur="1s" begin="0.1s" fill="freeze"/></rect>
+      <rect x="75" y="140" width="26" height="110" rx="3"><animate attributeName="height" from="0" to="110" dur="1s" begin="0.2s" fill="freeze"/><animate attributeName="y" from="250" to="140" dur="1s" begin="0.2s" fill="freeze"/></rect>
+      <rect x="115" y="100" width="26" height="150" rx="3"><animate attributeName="height" from="0" to="150" dur="1s" begin="0.3s" fill="freeze"/><animate attributeName="y" from="250" to="100" dur="1s" begin="0.3s" fill="freeze"/></rect>
+      <rect x="155" y="160" width="26" height="90" rx="3"><animate attributeName="height" from="0" to="90" dur="1s" begin="0.4s" fill="freeze"/><animate attributeName="y" from="250" to="160" dur="1s" begin="0.4s" fill="freeze"/></rect>
+      <rect x="195" y="70" width="26" height="180" rx="3"><animate attributeName="height" from="0" to="180" dur="1s" begin="0.5s" fill="freeze"/><animate attributeName="y" from="250" to="70" dur="1s" begin="0.5s" fill="freeze"/></rect>
+      <rect x="235" y="120" width="26" height="130" rx="3"><animate attributeName="height" from="0" to="130" dur="1s" begin="0.6s" fill="freeze"/><animate attributeName="y" from="250" to="120" dur="1s" begin="0.6s" fill="freeze"/></rect>
+      <rect x="275" y="55" width="26" height="195" rx="3"><animate attributeName="height" from="0" to="195" dur="1s" begin="0.7s" fill="freeze"/><animate attributeName="y" from="250" to="55" dur="1s" begin="0.7s" fill="freeze"/></rect>
+    </g>
+    <text x="165" y="272" text-anchor="middle" font-family="Consolas, monospace" font-size="10" fill="#5B6B7A">M &#160; &#160;T &#160; &#160;W &#160; &#160;T &#160; &#160;F &#160; &#160;S &#160; &#160;S</text>
+  </g>
+
+  <!-- panel 3: log feed -->
+  <g transform="translate(790,80)">
+    <rect x="0" y="0" width="370" height="290" rx="12" fill="url(#panelGrad)" stroke="#1B2733"/>
+    <text x="20" y="30" font-family="Consolas, monospace" font-size="12" fill="#8B5CF6" letter-spacing="2">EVENT STREAM</text>
+    <g font-family="Consolas, monospace" font-size="11" fill="#8FA3B0">
+      <text x="20" y="60" opacity="0">[OK] agent.route resolved in 82ms<animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.3s" fill="freeze"/></text>
+      <text x="20" y="88" opacity="0">[OK] rag.retrieve top_k=6<animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.8s" fill="freeze"/></text>
+      <text x="20" y="116" fill="#00FF99" opacity="0">[OK] vector.index synced<animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.3s" fill="freeze"/></text>
+      <text x="20" y="144" opacity="0">[OK] auth.session issued<animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.8s" fill="freeze"/></text>
+      <text x="20" y="172" fill="#00F5FF" opacity="0">[..] deploy.build queued<animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.3s" fill="freeze"/></text>
+      <text x="20" y="200" opacity="0">[OK] cache.hit ratio 0.91<animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.8s" fill="freeze"/></text>
+      <text x="20" y="228" opacity="0">[OK] webhook.ack 200<animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.3s" fill="freeze"/></text>
+    </g>
+    <rect x="18" y="238" width="8" height="14" fill="#00FF99">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" begin="3.6s"/>
+    </rect>
+  </g>
+</svg>

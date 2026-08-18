@@ -1,0 +1,16 @@
+<svg width="1200" height="50" viewBox="0 0 1200 50" xmlns="http://www.w3.org/2000/svg" role="presentation" aria-hidden="true">
+  <defs>
+    <linearGradient id="dnaA" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#00F5FF" stop-opacity="0"/><stop offset="50%" stop-color="#00F5FF"/><stop offset="100%" stop-color="#00F5FF" stop-opacity="0"/></linearGradient>
+    <linearGradient id="dnaB" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#8B5CF6" stop-opacity="0"/><stop offset="50%" stop-color="#8B5CF6"/><stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/></linearGradient>
+  </defs>
+  <path d="M0,25 Q50,5 100,25 T200,25 T300,25 T400,25 T500,25 T600,25 T700,25 T800,25 T900,25 T1000,25 T1100,25 T1200,25" stroke="url(#dnaA)" stroke-width="1.6" fill="none">
+    <animateTransform attributeName="transform" type="translate" values="0,0;100,0;0,0" dur="6s" repeatCount="indefinite"/>
+  </path>
+  <path d="M0,25 Q50,45 100,25 T200,25 T300,25 T400,25 T500,25 T600,25 T700,25 T800,25 T900,25 T1000,25 T1100,25 T1200,25" stroke="url(#dnaB)" stroke-width="1.6" fill="none">
+    <animateTransform attributeName="transform" type="translate" values="0,0;-100,0;0,0" dur="6s" repeatCount="indefinite"/>
+  </path>
+  <g fill="#00FF99" opacity="0.7">
+    <circle cx="100" cy="25" r="1.8"/><circle cx="300" cy="25" r="1.8"/><circle cx="500" cy="25" r="1.8"/>
+    <circle cx="700" cy="25" r="1.8"/><circle cx="900" cy="25" r="1.8"/><circle cx="1100" cy="25" r="1.8"/>
+  </g>
+</svg>

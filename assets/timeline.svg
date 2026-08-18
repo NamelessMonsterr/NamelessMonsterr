@@ -1,0 +1,52 @@
+<svg width="1200" height="260" viewBox="0 0 1200 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Execution log timeline from first programming steps to HealthX and beyond">
+  <defs>
+    <linearGradient id="tGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00F5FF"/><stop offset="50%" stop-color="#8B5CF6"/><stop offset="100%" stop-color="#00FF99"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="260" rx="14" fill="#0D1117"/>
+  <rect width="1200" height="260" rx="14" fill="none" stroke="#1B2733"/>
+  <text x="40" y="40" font-family="Consolas, monospace" font-size="13" letter-spacing="4" fill="#5B6B7A">EXECUTION LOG // TIMELINE</text>
+
+  <line x1="80" y1="150" x2="1120" y2="150" stroke="#1B2733" stroke-width="2"/>
+  <line x1="80" y1="150" x2="1120" y2="150" stroke="url(#tGrad)" stroke-width="2" stroke-dasharray="1040" stroke-dashoffset="1040">
+    <animate attributeName="stroke-dashoffset" from="1040" to="0" dur="2.4s" fill="freeze" begin="0.2s"/>
+  </line>
+
+  <g font-family="Consolas, monospace" font-size="12" text-anchor="middle">
+    <g>
+      <circle cx="120" cy="150" r="8" fill="#00F5FF"/>
+      <text x="120" y="130" fill="#E8F1F2">Started Programming</text>
+      <text x="120" y="180" fill="#5B6B7A">foundations</text>
+    </g>
+    <g>
+      <circle cx="330" cy="150" r="8" fill="#00F5FF"/>
+      <text x="330" y="130" fill="#E8F1F2">Backend Systems</text>
+      <text x="330" y="180" fill="#5B6B7A">Python · FastAPI</text>
+    </g>
+    <g>
+      <circle cx="540" cy="150" r="8" fill="#8B5CF6"/>
+      <text x="540" y="130" fill="#E8F1F2">Machine Learning</text>
+      <text x="540" y="180" fill="#5B6B7A">models · pipelines</text>
+    </g>
+    <g>
+      <circle cx="750" cy="150" r="8" fill="#8B5CF6"/>
+      <text x="750" y="130" fill="#E8F1F2">LLMs &amp; RAG</text>
+      <text x="750" y="180" fill="#5B6B7A">agentic systems</text>
+    </g>
+    <g>
+      <circle cx="960" cy="150" r="9" fill="#00FF99"/>
+      <text x="960" y="130" fill="#E8F1F2">HealthX</text>
+      <text x="960" y="180" fill="#5B6B7A">clinical AI</text>
+    </g>
+    <g>
+      <circle cx="1120" cy="150" r="9" fill="none" stroke="#00FF99" stroke-width="2">
+        <animate attributeName="r" values="9;14;9" dur="1.6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0.2;1" dur="1.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1120" cy="150" r="6" fill="#00FF99"/>
+      <text x="1090" y="130" fill="#00FF99">what's next</text>
+      <text x="1090" y="180" fill="#5B6B7A">building</text>
+    </g>
+  </g>
+</svg>

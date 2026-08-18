@@ -1,0 +1,7 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Icon representing the FastAPI framework">
+  <rect width="64" height="64" rx="14" fill="#0D1117" stroke="#00FF99" stroke-width="1.4"/>
+  <circle cx="32" cy="32" r="18" fill="none" stroke="#00FF99" stroke-width="2"/>
+  <path d="M34 16 L22 34 H32 L28 48 L44 28 H34 Z" fill="#00FF99" opacity="0.9">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="1.6s" repeatCount="indefinite"/>
+  </path>
+</svg>
